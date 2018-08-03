@@ -1,4 +1,4 @@
-# psi [![Build Status](https://travis-ci.org/addyosmani/psi.svg?branch=master)](https://travis-ci.org/addyosmani/psi)
+# psi-v4 [![Build Status](https://travis-ci.org/addyosmani/psi.svg?branch=master)](https://travis-ci.org/addyosmani/psi)
 
 > PageSpeed Insights with reporting
 
@@ -10,7 +10,7 @@ Run mobile and desktop performance tests for your deployed site using [Google Pa
 ## Install
 
 ```
-$ npm install psi
+$ npm install psi-v4
 ```
 
 
