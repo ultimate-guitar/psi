@@ -1,9 +1,9 @@
 {
-  "name": "psi",
-  "version": "3.1.0",
-  "description": "PageSpeed Insights with reporting",
+  "name": "psi-v4",
+  "version": "4.0.0",
+  "description": "PageSpeed Insights v4 with reporting",
   "license": "Apache-2.0",
-  "repository": "addyosmani/psi",
+  "repository": "ultimate-guitar/psi-v4",
   "author": {
     "name": "Addy Osmani",
     "email": "addyosmani@gmail.com",
@@ -29,7 +29,8 @@
     "website",
     "measure",
     "optimize",
-    "size"
+    "size",
+    "v4"
   ],
   "dependencies": {
     "chalk": "^2.3.0",
