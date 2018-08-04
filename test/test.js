@@ -23,7 +23,7 @@ describe('Formatting', () => {
 
   it('should correctly format PageSpeed Insights response', function () {
     return output({strategy: 'desktop'}, response).then(() => {
-      assert(/Speed: +88/.test(stripAnsi(this.formattedOutput)));
+      assert(/Speed: +99/.test(stripAnsi(this.formattedOutput)));
     });
   });
 
@@ -35,12 +35,12 @@ describe('Formatting', () => {
 
   it('should format PageSpeed Insights response as JSON output', function () {
     return output({strategy: 'desktop', format: 'json'}, response).then(() => {
-      assert(/"Speed": 88/.test(stripAnsi(this.formattedOutput)));
+      assert(/"Speed": 99/.test(stripAnsi(this.formattedOutput)));
     });
   });
 
   it('should have an error in the callback if threshold is not met', () => {
-    return output({threshold: 100}, response).catch(err => {
+    return output({threshold: 100, strategy: 'desktop'}, response).catch(err => {
       assert.equal(err.name, 'Error', 'Expected an error.');
     });
   });

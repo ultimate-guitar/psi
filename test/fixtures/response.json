@@ -1,418 +1,281 @@
 {
     "data":
     {
-        "kind": "pagespeedonline#result",
-    "id": "http://www.html5rocks.com/en/",
-    "responseCode": 200,
-    "title": "HTML5 Rocks - A resource for open web HTML5 developers",
-    "ruleGroups": {
+      "captchaResult": "CAPTCHA_NOT_NEEDED",
+      "kind": "pagespeedonline#result",
+      "id": "https://www.ultimate-guitar.com/",
+      "responseCode": 200,
+      "title": "ULTIMATE GUITAR TABS. 1,100,000 songs catalog with free Chords, Guitar Tabs, Bass Tabs, Ukulele Chords and Guitar Pro Tabs!",
+      "ruleGroups": {
         "SPEED": {
-            "score": 88
+          "score": 99
         }
-    },
-    "pageStats": {
-        "numberResources": 25,
+      },
+      "loadingExperience": {
+        "id": "https://www.ultimate-guitar.com/",
+        "metrics": {
+          "FIRST_CONTENTFUL_PAINT_MS": {
+            "median": 1055,
+            "distributions": [
+              {
+                "min": 0,
+                "max": 1567,
+                "proportion": 0.7168654148929966
+              },
+              {
+                "min": 1567,
+                "max": 2963,
+                "proportion": 0.1972967186758079
+              },
+              {
+                "min": 2963,
+                "proportion": 0.08583786643119548
+              }
+            ],
+            "category": "FAST"
+          },
+          "DOM_CONTENT_LOADED_EVENT_FIRED_MS": {
+            "median": 1267,
+            "distributions": [
+              {
+                "min": 0,
+                "max": 2120,
+                "proportion": 0.7711280383287203
+              },
+              {
+                "min": 2120,
+                "max": 4226,
+                "proportion": 0.16560870255942875
+              },
+              {
+                "min": 4226,
+                "proportion": 0.06326325911185064
+              }
+            ],
+            "category": "FAST"
+          }
+        },
+        "overall_category": "FAST",
+        "initial_url": "https://www.ultimate-guitar.com/"
+      },
+      "pageStats": {
+        "numberResources": 16,
         "numberHosts": 6,
-        "totalRequestBytes": "2938",
-        "numberStaticResources": 14,
-        "htmlResponseBytes": "18805",
-        "cssResponseBytes": "53940",
-        "imageResponseBytes": "114871",
-        "javascriptResponseBytes": "80851",
-        "otherResponseBytes": "105025",
-        "numberJsResources": 3,
-        "numberCssResources": 2
-    },
-    "formattedResults": {
+        "totalRequestBytes": "5267",
+        "numberStaticResources": 7,
+        "htmlResponseBytes": "88101",
+        "overTheWireResponseBytes": "174377",
+        "imageResponseBytes": "1935",
+        "javascriptResponseBytes": "463673",
+        "otherResponseBytes": "3359",
+        "numberJsResources": 7,
+        "numTotalRoundTrips": 12,
+        "numRenderBlockingRoundTrips": 0
+      },
+      "formattedResults": {
         "locale": "en_US",
         "ruleResults": {
-            "AvoidLandingPageRedirects": {
-                "localizedRuleName": "Avoid landing page redirects",
-                "ruleImpact": 0,
-                "groups": [
-                    "SPEED"
-                ],
-                "summary": {
-                    "format": "Your page has no redirects. Learn more about {{BEGIN_LINK}}avoiding landing page redirects{{END_LINK}}.",
-                    "args": [
-                        {
-                            "type": "HYPERLINK",
-                            "key": "LINK",
-                            "value": "https://developers.google.com/speed/docs/insights/AvoidRedirects"
-                        }
-                    ]
+          "AvoidLandingPageRedirects": {
+            "localizedRuleName": "Avoid landing page redirects",
+            "ruleImpact": 0,
+            "groups": [
+              "SPEED"
+            ],
+            "summary": {
+              "format": "Your page has no redirects. Learn more about {{BEGIN_LINK}}avoiding landing page redirects{{END_LINK}}.",
+              "args": [
+                {
+                  "type": "HYPERLINK",
+                  "key": "LINK",
+                  "value": "https://developers.google.com/speed/docs/insights/AvoidRedirects"
                 }
-            },
-            "EnableGzipCompression": {
-                "localizedRuleName": "Enable compression",
-                "ruleImpact": 0,
-                "groups": [
-                    "SPEED"
-                ],
-                "summary": {
-                    "format": "You have compression enabled. Learn more about {{BEGIN_LINK}}enabling compression{{END_LINK}}.",
-                    "args": [
-                        {
-                            "type": "HYPERLINK",
-                            "key": "LINK",
-                            "value": "https://developers.google.com/speed/docs/insights/EnableCompression"
-                        }
-                    ]
-                }
-            },
-            "LeverageBrowserCaching": {
-                "localizedRuleName": "Leverage browser caching",
-                "ruleImpact": 0.9932349537037037,
-                "groups": [
-                    "SPEED"
-                ],
-                "summary": {
-                    "format": "Setting an expiry date or a maximum age in the HTTP headers for static resources instructs the browser to load previously downloaded resources from local disk rather than over the network."
-                },
-                "urlBlocks": [
-                    {
-                        "header": {
-                            "format": "{{BEGIN_LINK}}Leverage browser caching{{END_LINK}} for the following cacheable resources:",
-                            "args": [
-                                {
-                                    "type": "HYPERLINK",
-                                    "key": "LINK",
-                                    "value": "https://developers.google.com/speed/docs/insights/LeverageBrowserCaching"
-                                }
-                            ]
-                        },
-                        "urls": [
-                            {
-                                "result": {
-                                    "format": "{{URL}} ({{LIFETIME}})",
-                                    "args": [
-                                        {
-                                            "type": "URL",
-                                            "key": "URL",
-                                            "value": "http://www.googletagmanager.com/gtm.js?id=GTM-MB3LRF"
-                                        },
-                                        {
-                                            "type": "DURATION",
-                                            "key": "LIFETIME",
-                                            "value": "16.4 minutes"
-                                        }
-                                    ]
-                                }
-                            },
-                            {
-                                "result": {
-                                    "format": "{{URL}} ({{LIFETIME}})",
-                                    "args": [
-                                        {
-                                            "type": "URL",
-                                            "key": "URL",
-                                            "value": "http://www.google-analytics.com/analytics.js"
-                                        },
-                                        {
-                                            "type": "DURATION",
-                                            "key": "LIFETIME",
-                                            "value": "2 hours"
-                                        }
-                                    ]
-                                }
-                            }
-                        ]
-                    }
-                ]
-            },
-            "MainResourceServerResponseTime": {
-                "localizedRuleName": "Reduce server response time",
-                "ruleImpact": 0.31,
-                "groups": [
-                    "SPEED"
-                ],
-                "urlBlocks": [
-                    {
-                        "header": {
-                            "format": "In our test, your server responded in {{RESPONSE_TIME}}. There are many factors that can slow down your server response time. {{BEGIN_LINK}}Please read our recommendations{{END_LINK}} to learn how you can monitor and measure where your server is spending the most time.",
-                            "args": [
-                                {
-                                    "type": "DURATION",
-                                    "key": "RESPONSE_TIME",
-                                    "value": "0.23 seconds"
-                                },
-                                {
-                                    "type": "HYPERLINK",
-                                    "key": "LINK",
-                                    "value": "https://developers.google.com/speed/docs/insights/Server"
-                                }
-                            ]
-                        }
-                    }
-                ]
-            },
-            "MinifyCss": {
-                "localizedRuleName": "Minify CSS",
-                "ruleImpact": 0,
-                "groups": [
-                    "SPEED"
-                ],
-                "summary": {
-                    "format": "Your CSS is minified. Learn more about {{BEGIN_LINK}}minifying CSS{{END_LINK}}.",
-                    "args": [
-                        {
-                            "type": "HYPERLINK",
-                            "key": "LINK",
-                            "value": "https://developers.google.com/speed/docs/insights/MinifyResources"
-                        }
-                    ]
-                }
-            },
-            "MinifyHTML": {
-                "localizedRuleName": "Minify HTML",
-                "ruleImpact": 0.0873,
-                "groups": [
-                    "SPEED"
-                ],
-                "summary": {
-                    "format": "Compacting HTML code, including any inline JavaScript and CSS contained in it, can save many bytes of data and speed up download and parse times."
-                },
-                "urlBlocks": [
-                    {
-                        "header": {
-                            "format": "{{BEGIN_LINK}}Minify HTML{{END_LINK}} for the following resources to reduce their size by {{SIZE_IN_BYTES}} ({{PERCENTAGE}} reduction).",
-                            "args": [
-                                {
-                                    "type": "HYPERLINK",
-                                    "key": "LINK",
-                                    "value": "https://developers.google.com/speed/docs/insights/MinifyResources"
-                                },
-                                {
-                                    "type": "BYTES",
-                                    "key": "SIZE_IN_BYTES",
-                                    "value": "873B"
-                                },
-                                {
-                                    "type": "PERCENTAGE",
-                                    "key": "PERCENTAGE",
-                                    "value": "19%"
-                                }
-                            ]
-                        },
-                        "urls": [
-                            {
-                                "result": {
-                                    "format": "Minifying {{URL}} could save {{SIZE_IN_BYTES}} ({{PERCENTAGE}} reduction) after compression.",
-                                    "args": [
-                                        {
-                                            "type": "URL",
-                                            "key": "URL",
-                                            "value": "http://www.html5rocks.com/en/"
-                                        },
-                                        {
-                                            "type": "BYTES",
-                                            "key": "SIZE_IN_BYTES",
-                                            "value": "873B"
-                                        },
-                                        {
-                                            "type": "PERCENTAGE",
-                                            "key": "PERCENTAGE",
-                                            "value": "19%"
-                                        }
-                                    ]
-                                }
-                            }
-                        ]
-                    }
-                ]
-            },
-            "MinifyJavaScript": {
-                "localizedRuleName": "Minify JavaScript",
-                "ruleImpact": 0,
-                "groups": [
-                    "SPEED"
-                ],
-                "summary": {
-                    "format": "Your JavaScript content is minified. Learn more about {{BEGIN_LINK}}minifying JavaScript{{END_LINK}}.",
-                    "args": [
-                        {
-                            "type": "HYPERLINK",
-                            "key": "LINK",
-                            "value": "https://developers.google.com/speed/docs/insights/MinifyResources"
-                        }
-                    ]
-                }
-            },
-            "MinimizeRenderBlockingResources": {
-                "localizedRuleName": "Eliminate render-blocking JavaScript and CSS in above-the-fold content",
-                "ruleImpact": 6,
-                "groups": [
-                    "SPEED"
-                ],
-                "summary": {
-                    "format": "Your page has {{NUM_SCRIPTS}} blocking script resources and {{NUM_CSS}} blocking CSS resources. This causes a delay in rendering your page.",
-                    "args": [
-                        {
-                            "type": "INT_LITERAL",
-                            "key": "NUM_SCRIPTS",
-                            "value": "1"
-                        },
-                        {
-                            "type": "INT_LITERAL",
-                            "key": "NUM_CSS",
-                            "value": "2"
-                        }
-                    ]
-                },
-                "urlBlocks": [
-                    {
-                        "header": {
-                            "format": "None of the above-the-fold content on your page could be rendered without waiting for the following resources to load. Try to defer or asynchronously load blocking resources, or inline the critical portions of those resources directly in the HTML."
-                        }
-                    },
-                    {
-                        "header": {
-                            "format": "{{BEGIN_LINK}}Remove render-blocking JavaScript{{END_LINK}}:",
-                            "args": [
-                                {
-                                    "type": "HYPERLINK",
-                                    "key": "LINK",
-                                    "value": "https://developers.google.com/speed/docs/insights/BlockingJS"
-                                }
-                            ]
-                        },
-                        "urls": [
-                            {
-                                "result": {
-                                    "format": "{{URL}}",
-                                    "args": [
-                                        {
-                                            "type": "URL",
-                                            "key": "URL",
-                                            "value": "http://www.html5rocks.com/static/js/modernizr.custom.82437.js"
-                                        }
-                                    ]
-                                }
-                            }
-                        ]
-                    },
-                    {
-                        "header": {
-                            "format": "{{BEGIN_LINK}}Optimize CSS Delivery{{END_LINK}} of the following:",
-                            "args": [
-                                {
-                                    "type": "HYPERLINK",
-                                    "key": "LINK",
-                                    "value": "https://developers.google.com/speed/docs/insights/OptimizeCSSDelivery"
-                                }
-                            ]
-                        },
-                        "urls": [
-                            {
-                                "result": {
-                                    "format": "{{URL}}",
-                                    "args": [
-                                        {
-                                            "type": "URL",
-                                            "key": "URL",
-                                            "value": "http://www.html5rocks.com/static/css/v2-combined.min.css?20131111"
-                                        }
-                                    ]
-                                }
-                            },
-                            {
-                                "result": {
-                                    "format": "{{URL}}",
-                                    "args": [
-                                        {
-                                            "type": "URL",
-                                            "key": "URL",
-                                            "value": "http://fonts.googleapis.com/css?family=Open+Sans:300,400,400italic,600,800"
-                                        }
-                                    ]
-                                }
-                            }
-                        ]
-                    }
-                ]
-            },
-            "OptimizeImages": {
-                "localizedRuleName": "Optimize images",
-                "ruleImpact": 0.6536000000000001,
-                "groups": [
-                    "SPEED"
-                ],
-                "summary": {
-                    "format": "Properly formatting and compressing images can save many bytes of data."
-                },
-                "urlBlocks": [
-                    {
-                        "header": {
-                            "format": "{{BEGIN_LINK}}Optimize the following images{{END_LINK}} to reduce their size by {{SIZE_IN_BYTES}} ({{PERCENTAGE}} reduction).",
-                            "args": [
-                                {
-                                    "type": "HYPERLINK",
-                                    "key": "LINK",
-                                    "value": "https://developers.google.com/speed/docs/insights/OptimizeImages"
-                                },
-                                {
-                                    "type": "BYTES",
-                                    "key": "SIZE_IN_BYTES",
-                                    "value": "6.1KiB"
-                                },
-                                {
-                                    "type": "PERCENTAGE",
-                                    "key": "PERCENTAGE",
-                                    "value": "29%"
-                                }
-                            ]
-                        },
-                        "urls": [
-                            {
-                                "result": {
-                                    "format": "Losslessly compressing {{URL}} could save {{SIZE_IN_BYTES}} ({{PERCENTAGE}} reduction).",
-                                    "args": [
-                                        {
-                                            "type": "URL",
-                                            "key": "URL",
-                                            "value": "http://www.html5rocks.com/static/images/profiles/75/samthorogood.75.png"
-                                        },
-                                        {
-                                            "type": "BYTES",
-                                            "key": "SIZE_IN_BYTES",
-                                            "value": "6.1KiB"
-                                        },
-                                        {
-                                            "type": "PERCENTAGE",
-                                            "key": "PERCENTAGE",
-                                            "value": "29%"
-                                        }
-                                    ]
-                                }
-                            }
-                        ]
-                    }
-                ]
-            },
-            "PrioritizeVisibleContent": {
-                "localizedRuleName": "Prioritize visible content",
-                "ruleImpact": 0,
-                "groups": [
-                    "SPEED"
-                ],
-                "summary": {
-                    "format": "You have the above-the-fold content properly prioritized. Learn more about {{BEGIN_LINK}}prioritizing visible content{{END_LINK}}.",
-                    "args": [
-                        {
-                            "type": "HYPERLINK",
-                            "key": "LINK",
-                            "value": "https://developers.google.com/speed/docs/insights/PrioritizeVisibleContent"
-                        }
-                    ]
-                }
+              ]
             }
+          },
+          "EnableGzipCompression": {
+            "localizedRuleName": "Enable compression",
+            "ruleImpact": 0,
+            "groups": [
+              "SPEED"
+            ],
+            "summary": {
+              "format": "You have compression enabled. Learn more about {{BEGIN_LINK}}enabling compression{{END_LINK}}.",
+              "args": [
+                {
+                  "type": "HYPERLINK",
+                  "key": "LINK",
+                  "value": "https://developers.google.com/speed/docs/insights/EnableCompression"
+                }
+              ]
+            }
+          },
+          "LeverageBrowserCaching": {
+            "localizedRuleName": "Leverage browser caching",
+            "ruleImpact": 1,
+            "groups": [
+              "SPEED"
+            ],
+            "summary": {
+              "format": "Setting an expiry date or a maximum age in the HTTP headers for static resources instructs the browser to load previously downloaded resources from local disk rather than over the network."
+            },
+            "urlBlocks": [
+              {
+                "header": {
+                  "format": "{{BEGIN_LINK}}Leverage browser caching{{END_LINK}} for the following cacheable resources:",
+                  "args": [
+                    {
+                      "type": "HYPERLINK",
+                      "key": "LINK",
+                      "value": "https://developers.google.com/speed/docs/insights/LeverageBrowserCaching"
+                    }
+                  ]
+                },
+                "urls": [
+                  {
+                    "result": {
+                      "format": "{{URL}} ({{LIFETIME}})",
+                      "args": [
+                        {
+                          "type": "URL",
+                          "key": "URL",
+                          "value": "https://mc.yandex.ru/metrika/advert.gif"
+                        },
+                        {
+                          "type": "DURATION",
+                          "key": "LIFETIME",
+                          "value": "60 minutes"
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          "MainResourceServerResponseTime": {
+            "localizedRuleName": "Reduce server response time",
+            "ruleImpact": 0,
+            "groups": [
+              "SPEED"
+            ],
+            "summary": {
+              "format": "Your server responded quickly. Learn more about {{BEGIN_LINK}}server response time optimization{{END_LINK}}.",
+              "args": [
+                {
+                  "type": "HYPERLINK",
+                  "key": "LINK",
+                  "value": "https://developers.google.com/speed/docs/insights/Server"
+                }
+              ]
+            }
+          },
+          "MinifyCss": {
+            "localizedRuleName": "Minify CSS",
+            "ruleImpact": 0,
+            "groups": [
+              "SPEED"
+            ],
+            "summary": {
+              "format": "Your CSS is minified. Learn more about {{BEGIN_LINK}}minifying CSS{{END_LINK}}.",
+              "args": [
+                {
+                  "type": "HYPERLINK",
+                  "key": "LINK",
+                  "value": "https://developers.google.com/speed/docs/insights/MinifyResources"
+                }
+              ]
+            }
+          },
+          "MinifyHTML": {
+            "localizedRuleName": "Minify HTML",
+            "ruleImpact": 0,
+            "groups": [
+              "SPEED"
+            ],
+            "summary": {
+              "format": "Your HTML is minified. Learn more about {{BEGIN_LINK}}minifying HTML{{END_LINK}}.",
+              "args": [
+                {
+                  "type": "HYPERLINK",
+                  "key": "LINK",
+                  "value": "https://developers.google.com/speed/docs/insights/MinifyResources"
+                }
+              ]
+            }
+          },
+          "MinifyJavaScript": {
+            "localizedRuleName": "Minify JavaScript",
+            "ruleImpact": 0,
+            "groups": [
+              "SPEED"
+            ],
+            "summary": {
+              "format": "Your JavaScript content is minified. Learn more about {{BEGIN_LINK}}minifying JavaScript{{END_LINK}}.",
+              "args": [
+                {
+                  "type": "HYPERLINK",
+                  "key": "LINK",
+                  "value": "https://developers.google.com/speed/docs/insights/MinifyResources"
+                }
+              ]
+            }
+          },
+          "MinimizeRenderBlockingResources": {
+            "localizedRuleName": "Eliminate render-blocking JavaScript and CSS in above-the-fold content",
+            "ruleImpact": 0,
+            "groups": [
+              "SPEED"
+            ],
+            "summary": {
+              "format": "You have no render-blocking resources. Learn more about {{BEGIN_LINK}}removing render-blocking resources{{END_LINK}}.",
+              "args": [
+                {
+                  "type": "HYPERLINK",
+                  "key": "LINK",
+                  "value": "https://developers.google.com/speed/docs/insights/BlockingJS"
+                }
+              ]
+            }
+          },
+          "OptimizeImages": {
+            "localizedRuleName": "Optimize images",
+            "ruleImpact": 0,
+            "groups": [
+              "SPEED"
+            ],
+            "summary": {
+              "format": "Your images are optimized. Learn more about {{BEGIN_LINK}}optimizing images{{END_LINK}}.",
+              "args": [
+                {
+                  "type": "HYPERLINK",
+                  "key": "LINK",
+                  "value": "https://developers.google.com/speed/docs/insights/OptimizeImages"
+                }
+              ]
+            }
+          },
+          "PrioritizeVisibleContent": {
+            "localizedRuleName": "Prioritize visible content",
+            "ruleImpact": 0,
+            "groups": [
+              "SPEED"
+            ],
+            "summary": {
+              "format": "You have the above-the-fold content properly prioritized. Learn more about {{BEGIN_LINK}}prioritizing visible content{{END_LINK}}.",
+              "args": [
+                {
+                  "type": "HYPERLINK",
+                  "key": "LINK",
+                  "value": "https://developers.google.com/speed/docs/insights/PrioritizeVisibleContent"
+                }
+              ]
+            }
+          }
         }
-    },
-    "version": {
+      },
+      "version": {
         "major": 1,
         "minor": 15
-    }
-        
-    }
-    
+      }
+    }    
 }
