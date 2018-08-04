@@ -7,7 +7,7 @@ const psi = require('.');
 
 const cli = meow(`
   Usage
-    $ psi <url>
+    $ psi-v4 <url>
 
   Options
     --key        Google API Key. By default the free tier is used
@@ -19,7 +19,7 @@ const cli = meow(`
     --download   Download optimized resources
 
   Example
-    $ psi todomvc.com --strategy=mobile
+    $ psi-v4 todomvc.com --strategy=mobile
 `);
 
 updateNotifier({pkg: cli.pkg}).notify();

@@ -4,7 +4,7 @@
 
 ![](screenshot.png)
 
-Run mobile and desktop performance tests for your deployed site using [Google PageSpeed Insights](https://developers.google.com/speed/docs/insights/v2/getting-started) V2 with tidy reporting for your build process.
+Run mobile and desktop performance tests for your deployed site using [Google PageSpeed Insights](https://developers.google.com/speed/docs/insights/v4/getting-started) v4.
 
 
 ## Install
@@ -17,7 +17,7 @@ $ npm install psi-v4
 ## Usage
 
 ```js
-const psi = require('psi');
+const psi = require('psi-v4');
 
 // Get the PageSpeed Insights report
 psi('theverge.com').then(data => {
@@ -33,11 +33,10 @@ psi.output('theverge.com').then(() => {
 // Supply options to PSI and get back speed and usability scores
 psi('theverge.com', {nokey: 'true', strategy: 'mobile'}).then(data => {
   console.log('Speed score:', data.ruleGroups.SPEED.score);
-  console.log('Usability score:', data.ruleGroups.USABILITY.score);
 });
 ```
 
-As of PSI 2.x, we expose both the PageSpeed Insights speed and usability scores. The latter is based on [usability rules](https://developers.google.com/speed/docs/insights/rules) that score a page based on factors like the presence of a sensible mobile [viewport](https://developers.google.com/speed/docs/insights/ConfigureViewport).
+As of PSI 4.x, we expose the PageSpeed Insights speed score.
 
 
 ## API
@@ -54,7 +53,7 @@ URL of the page for which the PageSpeed Insights API should generate results.
 
 #### options
 
-Type: `Object`
+Type: `Object`plugin
 
 ##### key
 
@@ -97,14 +96,14 @@ Returns a promise for the response data from Google PageSpeed Insights.
 ## CLI
 
 ```
-$ npm install --global psi
+$ npm install --global psi-v4
 ```
 
 ```
-$ psi --help
+$ psi-v4 --help
 
   Usage
-    $ psi <url>
+    $ psi-v4 <url>
 
   Options
     --key        Google API Key. By default the free tier is used
@@ -116,15 +115,15 @@ $ psi --help
     --download   Download optimized resources
 
   Example
-    $ psi todomvc.com --strategy=mobile
+    $ psi-v4 todomvc.com --strategy=mobile
 ```
 
 
 ## Getting PSI into your build process
 
-A sample [Gulp](https://github.com/addyosmani/psi-gulp-sample) project using PSI is available.
+A sample [Gulp](https://github.com/addyosmani/psi-gulp-sample) project using PSI is available, but this project written for PSI v2. You can fork it and rewrite for PSI v4.
 
-If you use Grunt, [`grunt-pagespeed`](https://github.com/jrcryer/grunt-pagespeed) is a task by James Cryer that uses PSI under the hood.
+If you use Grunt, [`grunt-pagespeed`](https://github.com/jrcryer/grunt-pagespeed) is a task by James Cryer that uses PSI v2 under the hood. You can fork it and rewrite to PSI v4 too.
 
 For testing local project, we recommend using [ngrok](http://www.jamescryer.com/2014/06/12/grunt-pagespeed-and-ngrok-locally-testing/).
 
